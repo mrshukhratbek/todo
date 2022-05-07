@@ -1,4 +1,4 @@
-export const TodoItem = () => {
+export const TodosItem = () => {
   return (
     <li className="px-3 py-2 d-flex justify-content-between border-bottom align-items-center">
       <div className="form-check m-0">

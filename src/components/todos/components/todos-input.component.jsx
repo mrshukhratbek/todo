@@ -1,4 +1,4 @@
-export const TodoInput = () => {
+export const TodosInput = () => {
   return (
     <div className="row offset-md-3 offset-lg-4">
       <div className="col-md-8 col-lg-6 p-0">
