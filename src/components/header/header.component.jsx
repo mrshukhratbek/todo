@@ -7,7 +7,10 @@ export const Header = () => {
         <Link className="text-decoration-none h4 mb-0" to="/">
           Todos app
         </Link>
-        <a className="text-decoration-none h5 mb-0" href="https://github.com">
+        <a
+          className="text-decoration-none h5 mb-0"
+          href="https://github.com/mrshukhratbek/todo"
+        >
           Repo
         </a>
       </div>
