@@ -1,4 +1,4 @@
-export const TodosItem = () => {
+export const TodosItem = ({ todo }) => {
   return (
     <li className="px-3 py-2 d-flex justify-content-between border-bottom align-items-center">
       <div className="form-check m-0">
@@ -8,7 +8,7 @@ export const TodosItem = () => {
           value=""
           id="flexCheckDefault"
         />
-        <p className="form-check-label m-0">Default checkbox</p>
+        <p className="form-check-label m-0">{todo.text}</p>
       </div>
       <button type="button" className="btn-close" aria-label="Close"></button>
     </li>
