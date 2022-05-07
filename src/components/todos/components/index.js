@@ -1,3 +1,3 @@
-export * from './todos-input.component';
-export * from './todos-item.component';
-export * from './todos-actions.component';
+export * from './todos-input';
+export * from './todos-item';
+export * from './todos-actions';
