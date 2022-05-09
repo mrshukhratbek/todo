@@ -8,7 +8,7 @@ export const TodosItem = ({ todo }) => {
           value=""
           id="flexCheckDefault"
         />
-        <p className="form-check-label m-0">{todo.text}</p>
+        <p className="form-check-label m-0">{todo.title}</p>
       </div>
       <button type="button" className="btn-close" aria-label="Close"></button>
     </li>

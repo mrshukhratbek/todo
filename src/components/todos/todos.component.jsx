@@ -12,7 +12,7 @@ export const Todos = hoc(useTodosProps, ({ todos }) => {
             {todos.map((todo) => (
               <TodosItem key={todo.id} todo={todo} />
             ))}
-            <TodosActions />
+            <TodosActions count={todos.length} />
           </ul>
         )}
       </div>

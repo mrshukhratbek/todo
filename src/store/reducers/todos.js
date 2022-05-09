@@ -1,16 +1,10 @@
-const initialState = [
-  {
-    id: 1,
-    text: 'Test #1',
-    isComplated: false,
-  },
-  {
-    id: 2,
-    text: 'Test #2',
-    isComplated: false,
-  },
-];
+const initialState = [];
 
 export const todos = (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case 'ADD_TODO':
+      return [...state, action.payload];
+    default:
+      return state;
+  }
 };
