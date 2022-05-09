@@ -1,6 +1,7 @@
 import { TODOS } from '../../constants';
 
-const initialState = [];
+const localTodos = JSON.parse(localStorage.getItem('todos'));
+const initialState = localTodos ? localTodos : [];
 
 export const todos = (state = initialState, action) => {
   switch (action.type) {
