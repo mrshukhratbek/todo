@@ -8,3 +8,12 @@ export const addTodo = (todo) => {
     },
   };
 };
+
+export const removeTodo = (id) => {
+  return {
+    type: TODOS.REMOVE_TODO,
+    payload: {
+      id,
+    },
+  };
+};
