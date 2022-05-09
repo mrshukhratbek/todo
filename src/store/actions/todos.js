@@ -1,6 +1,8 @@
+import { TODOS } from '../../constants';
+
 export const addTodo = (todo) => {
   return {
-    type: 'ADD_TODO',
+    type: TODOS.ADD_TODO,
     payload: {
       ...todo,
     },
