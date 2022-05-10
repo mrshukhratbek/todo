@@ -27,7 +27,7 @@ export const TodosItem = hoc(
           type="button"
           className="btn-close"
           aria-label="Close"
-          onClick={() => handleRemoveTodo(todo.id)}
+          onClick={handleRemoveTodo.bind(null, todo.id)}
         ></button>
       </li>
     );
