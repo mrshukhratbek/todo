@@ -1,4 +1,4 @@
-import { TODOS } from '../../constants';
+import { TODOS } from '../../../constants';
 
 const localTodos = JSON.parse(localStorage.getItem('todos'));
 const initialState = localTodos ? localTodos : [];
