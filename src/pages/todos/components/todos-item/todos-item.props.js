@@ -5,7 +5,7 @@ export const useTodosItemProps = () => {
   const dispatch = useDispatch();
 
   const handleRemoveTodo = (id) => {
-    dispatch(removeTodo(id));
+    dispatch(removeTodo({ id }));
   };
 
   const handleComplatedTodo = (evt) => {
