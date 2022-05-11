@@ -1,15 +1,11 @@
 import './app.css';
-import { Header, Footer, Todos } from './components';
+import { Todos, MainLayout } from './components';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main className="flex-grow-1">
-        <Todos />
-      </main>
-      <Footer />
-    </>
+    <MainLayout>
+      <Todos />
+    </MainLayout>
   );
 }
 
