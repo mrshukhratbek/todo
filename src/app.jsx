@@ -1,5 +1,6 @@
 import './app.css';
-import { Todos, MainLayout } from './components';
+import { MainLayout } from './components';
+import { Todos } from './pages';
 
 function App() {
   return (
