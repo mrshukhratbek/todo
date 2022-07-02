@@ -16,10 +16,6 @@ export const useTodosProps = () => {
   useEffect(() => {
     setFilteredTodo(
       todos.filter((todo) => {
-        if (pathname === '/') {
-          return todo;
-        }
-
         if (pathname === '/active') {
           return todo.isCompleted === false;
         }
@@ -27,6 +23,8 @@ export const useTodosProps = () => {
         if (pathname === '/completed') {
           return todo.isCompleted === true;
         }
+
+        return todo;
       })
     );
   }, [pathname, todos]);
