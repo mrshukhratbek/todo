@@ -12,7 +12,7 @@ export const todos = (state = initialState, action) => {
     case TODOS.COMPLATED_TODO:
       state.forEach((todo) => {
         if (todo.id === action.payload.id) {
-          todo.isComplated = action.payload.isComplated;
+          todo.isCompleted = action.payload.isCompleted;
         }
       });
 

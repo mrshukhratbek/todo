@@ -10,14 +10,14 @@ export const TodosItem = hoc(
           <input
             className="form-check-input"
             type="checkbox"
-            defaultChecked={todo.isComplated}
+            defaultChecked={todo.isCompleted}
             data-id={todo.id}
             onChange={handleComplatedTodo}
             id="flexCheckDefault"
           />
           <p
             className={`form-check-label m-0 ${
-              todo.isComplated && 'text-decoration-line-through text-muted'
+              todo.isCompleted && 'text-decoration-line-through text-muted'
             }`}
           >
             {todo.title}

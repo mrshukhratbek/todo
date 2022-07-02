@@ -12,7 +12,7 @@ export const useTodosItemProps = () => {
     dispatch(
       complatedTodo({
         id: evt.target.dataset.id,
-        isComplated: evt.target.checked,
+        isCompleted: evt.target.checked,
       })
     );
   };

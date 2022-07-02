@@ -10,7 +10,7 @@ export const useTodosInputProps = () => {
       const newTodo = {
         id: uuidv4(),
         title: e.target.value,
-        isComplated: false,
+        isCompleted: false,
       };
 
       dispatch(addTodo(newTodo));

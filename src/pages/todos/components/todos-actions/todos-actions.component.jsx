@@ -22,7 +22,7 @@ export const TodosActions = ({ count }) => {
         <NavLink
           className="btn btn-outline-info p-1"
           style={{ lineHeight: 1 }}
-          to="/complated"
+          to="/completed"
         >
           Completed
         </NavLink>
